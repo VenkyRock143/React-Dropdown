@@ -1,6 +1,6 @@
 # React Dropdown Component
 
-![React Dropdown](https://react-dropdown-venky.netlify.app/)
+[React Dropdown](https://react-dropdown-venky.netlify.app/)
 
 A simple and customizable dropdown component built with React. This component provides a dropdown menu interface for selecting options, with support for keyboard navigation and custom styling.
 
