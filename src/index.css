@@ -5,9 +5,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #7bd7e2;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+ 
+  margin: auto; 
+  margin-top: 20%;
+  text-align: center;
+  /* border: 2px solid black; */
+  width: fit-content;
+  
+}
+/* .dropdown{
+  border-style: none;
+  width: 10%;
+  padding: 10px;
+  cursor: pointer;
+} */
+.dropdown-button{
+  border-style: none;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 2px;
+  font-size: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.dropdown-list{
+  list-style: none;
+  background-color: white;
+  margin-left: 13%;
+  width: 80%;
+  border-radius: 2px;
+  font-size: large;
+  padding: 10px 10px 10px 5px;
+  
+
+}
+.dropdown-item{
+  padding: 10px 10px 10px 0px;
+  text-align: left;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+
+.arrow{
+  width: 20px;
+  margin: auto;
+  padding-left: 10px;
 }
