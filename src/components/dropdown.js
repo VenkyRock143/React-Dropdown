@@ -14,36 +14,32 @@ export default function Dropdown({items}){
     };
 
     
-    return(
-        <>
-            <div className="container" >
-                    <h2>Should you use a dropdown? </h2>
-                    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <button className="dropdown-button" >
-                    Select an option 
-                    <img className="arrow" src="https://cdn-icons-png.flaticon.com/128/32/32195.png" alt="arrow"/>
-                    </button>
-                    {isOpen &&(
-                <ul className="dropdown-list">
-                    {items.map((item,index)=>(
-                        <li key={index} className="dropdown-item" onClick={handleOptionClick}>
-                            {item}
-                        </li>
-                    ))}   
-                </ul>
-               )}
-                    </div>
-                    
-               {/* {isOpen &&(
-                <ul className="dropdown-list">
-                    {items.map((item,index)=>(
-                        <li key={index} className="dropdown-item" onClick={handleOptionClick}>
-                            {item}
-                        </li>
-                    ))}   
-                </ul>
-               )} */}
+    return (
+        <div className="container">
+            <h2>Should you use a dropdown?</h2>
+            <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <button className="dropdown-button">
+                    Select an option
+                    <img 
+                        className="arrow" 
+                        src="https://cdn-icons-png.flaticon.com/128/32/32195.png" 
+                        alt="arrow" 
+                    />
+                </button>
+                {isOpen && (
+                    <ul className="dropdown-list">
+                        {items.map((item, index) => (
+                            <li 
+                                key={index} 
+                                className="dropdown-item" 
+                                onClick={() => handleOptionClick(item)}
+                            >
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                )}
             </div>
-        </>
-    )
-} 
+        </div>
+    );
+};
